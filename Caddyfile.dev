@@ -18,6 +18,7 @@ route {
     redir / /.well-known/mercure/ui/
     encode zstd gzip
 
+    blackfire
     mercure {
         # Transport to use (default to Bolt)
         transport_url {$MERCURE_TRANSPORT_URL:bolt://mercure.db}
