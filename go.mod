@@ -7,7 +7,7 @@ require (
 	github.com/dgraph-io/ristretto v0.0.3
 	github.com/dgryski/go-farm v0.0.0-20200201041132-a6ae2369ad13 // indirect
 	github.com/dunglas/jwt-go v3.2.1-0.20210401222640-f048a7c297bf+incompatible
-	github.com/fsnotify/fsnotify v1.4.9 // indirect
+	github.com/go-redis/redis/v8 v8.11.1
 	github.com/gofrs/uuid v4.0.0+incompatible
 	github.com/golang/protobuf v1.5.2 // indirect
 	github.com/gopherjs/gopherjs v0.0.0-20200217142428-fce0ec30dd00 // indirect

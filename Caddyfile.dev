@@ -12,6 +12,8 @@
 
 {$SERVER_NAME:localhost}
 
+# http://localhost:9000
+
 log
 
 route {

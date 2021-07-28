@@ -88,21 +88,14 @@ dockers:
 - ids:
   - caddy
   image_templates:
-  - 'dunglas/mercure:{{ .Tag }}'
-  - 'dunglas/mercure:v{{ .Major }}'
-  - 'dunglas/mercure:v{{ .Major }}.{{ .Minor }}'
-  - 'dunglas/mercure:latest'
+  - 'cooperl/mercure:{{ .Tag }}'
+  - 'cooperl/mercure:v{{ .Major }}'
+  - 'cooperl/mercure:v{{ .Major }}.{{ .Minor }}'
+  - 'cooperl/mercure:latest'
   extra_files:
   - Caddyfile
   - Caddyfile.dev
-- ids:
-  - legacy
-  dockerfile: Dockerfile.legacy
-  image_templates:
-  - 'dunglas/mercure:legacy-{{ .Tag }}'
-  - 'dunglas/mercure:legacy-v{{ .Major }}'
-  - 'dunglas/mercure:legacy-v{{ .Major }}.{{ .Minor }}'
-  - 'dunglas/mercure:legacy-latest'
+  - public
 signs:
   - artifacts: checksum
     args: ["--batch", "-u", "{{ .Env.GPG_FINGERPRINT }}", "--output", "${signature}", "--detach-sign", "${artifact}"]
